@@ -59,4 +59,5 @@ Refreshsf::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   
   match "/" => "home#view"
+  match "/slideshow" => "home#slideshow"
 end
