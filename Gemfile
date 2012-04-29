@@ -5,13 +5,12 @@ gem 'rails', '3.2.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -36,3 +35,33 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# Webserver
+gem 'thin'
+
+# Admin Interface, with Active Admin
+gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin'
+gem "meta_search"
+gem 'sass-rails', '>= 3.2.3'
+
+# Add devise for authentication
+gem 'devise'
+
+# Logger
+group :production, :staging do
+  gem "progstr-ruby", :require => 'progstr'
+end
+
+# Backbone
+gem "rails-backbone"
+
+# Underscore
+gem 'underscore-rails'
+
+# Require js
+gem 'requirejs-rails'
+
+# Country Select
+gem "country-select"
+
+
