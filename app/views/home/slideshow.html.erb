@@ -1,9 +1,81 @@
-<div id='blackbc'>
+<% content_for :stylesheets do %>
+	<%= stylesheet_link_tag 'impress', 'slideshow' %>
+<% end %>
+
+
+<div id="impress">
 	
-
-
-<div style="width:595px; 	margin: 50px auto;" id="__ss_12821799"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/aynne/refreshsf-12821799" title="Refreshsf" target="_blank">Refreshsf</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/12821799" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/aynne" target="_blank">Aynne Valencia</a> </div> </div>
-
-
+	<div class="no-support-message">
+	    Your browser doesn't support impress.js.  Try Chrome or Safari.
+	</div>
+	
+	
+	<div class="step" data-x="0" data-y="0" data-scale="1" data-rotate-y="-20">
+	    <%= image_tag('imagesofpreso/2.png') %>
+	</div>
+	
+	<div class="step" data-x="1200" data-y="0" data-scale="1" data-rotate-y="20">
+	    <%= image_tag('imagesofpreso/3.png') %>
+	</div>
+	
+	<div class="step" data-x="0" data-y="-700" data-scale="1" data-rotate-y="0">
+		<%= image_tag('imagesofpreso/4.png') %>
+	</div>
+	
+	<div class="step" data-x="1200" data-y="-700" data-scale="1" data-rotate-y="0">
+		<%= image_tag('imagesofpreso/5.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-1400" data-scale="1" data-rotate-x="90" data-rotate-z="90">
+		<%= image_tag('imagesofpreso/6.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-2600" data-scale="1" data-rotate-x="90" data-rotate-z="90">
+		<%= image_tag('imagesofpreso/7.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-3800" data-scale="1" data-rotate-x="90" data-rotate-z="90">
+		<%= image_tag('imagesofpreso/8.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-3200" data-scale="1" data-rotate-x="90" data-rotate-z="90" data-rotate-y="90">
+		<%= image_tag('imagesofpreso/9.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-2000" data-scale="1" data-rotate-x="90" data-rotate-z="90" data-rotate-y="90">
+		<%= image_tag('imagesofpreso/10.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="0" data-scale="0.5" data-rotate-x="0" data-rotate-y="180">
+		<%= image_tag('imagesofpreso/11.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-700" data-scale="0.5" data-rotate-x="0" data-rotate-y="180">
+		<%= image_tag('imagesofpreso/12.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="0" data-z="2200" data-scale="3" data-rotate-x="0" data-rotate-y="90">
+		<%= image_tag('imagesofpreso/13.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-1400" data-z="2200" data-scale="3" data-rotate-x="0" data-rotate-y="90">
+		<%= image_tag('imagesofpreso/14.png') %>
+	</div>
+	
+	<div class="step" data-x="600" data-y="-2800" data-z="2200" data-scale="3" data-rotate-x="0" data-rotate-y="90">
+		<%= image_tag('imagesofpreso/15.png') %>
+	</div>
+	
+	<div class="step" data-x="4000" data-y="-1400" data-z="1200" data-scale="3" data-rotate-x="0" data-rotate-y="90">
+		<%= image_tag('imagesofpreso/16.png') %>
+	</div>
+	
 	
 </div>
+
+
+
+
+<%= javascript_include_tag "impress" %>
+
+<script>impress().init();</script>
