@@ -64,6 +64,16 @@ a,a:active,a:hover{
 	text-align:center;
 }
 
+#blackbc-logo{
+	position: relative;
+	float: left;
+	margin-left: 55px;
+	margin-top: 35px;
+}
+
+#blackbc-logo img{
+	width: 200px;
+}
 
 #__ss_12821799{
 	margin:50px auto;
